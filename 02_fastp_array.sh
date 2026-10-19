@@ -3,7 +3,7 @@
 #SBATCH --partition=batch
 #SBATCH --array=TODO_ARRAY_RANGE
 #SBATCH --cpus-per-task=4
-#SBATCH --mem=8G
+#SBATCH --mem=16G
 #SBATCH --time=00:30:00
 #SBATCH --output=logs/%x_%A_%a.out
 #SBATCH --error=logs/%x_%A_%a.err
