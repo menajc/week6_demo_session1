@@ -4,9 +4,11 @@
 #SBATCH --array=TODO_ARRAY_RANGE
 #SBATCH --cpus-per-task=4
 #SBATCH --mem=8G
-#SBATCH --time=02:00:00
+#SBATCH --time=00:30:00
 #SBATCH --output=logs/%x_%A_%a.out
 #SBATCH --error=logs/%x_%A_%a.err
+
+
 
 # Resource requests are examples for this course dataset, not universal rules.
 sample=$(sed -n "$((SLURM_ARRAY_TASK_ID + 1))p" samples.txt)
